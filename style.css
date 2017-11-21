@@ -1,44 +1,136 @@
+/* Bordered form */
 body {
     margin: 0;
     padding: 0;
 }
 
-.loginForm {
+section {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-form {
+.containerForm {
     align-self: center;
 }
+form {
+    border: 3px solid #f1f1f1;
+    max-width: 560px;
+}
 
-/*form > #LoginWithAmazon {*/
-    /*padding: 10px 20px;*/
-    /*background: deepskyblue;*/
-    /*border: none;*/
-    /*border-radius: 3px;*/
-    /*transition: .3s background ease;*/
-    /*cursor: pointer;*/
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+#LoginWithAmazon {
+    width: 100%;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+/*body {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
 /*}*/
 
-/*form > #LoginWithAmazon:hover {*/
-    /*background: #438ae8;*/
+/*.loginForm {*/
+    /*height: 100vh;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-content: center;*/
 /*}*/
 
-label {
-    display: block;
-    margin: 10px 0;
-}
+/*form {*/
+    /*align-self: center;*/
+/*}*/
 
-label > input {
-    padding: 10px 220px 10px 10px;
-    color: darkgreen;
-}
+/*!*form > #LoginWithAmazon {*!*/
+    /*!*padding: 10px 20px;*!*/
+    /*!*background: deepskyblue;*!*/
+    /*!*border: none;*!*/
+    /*!*border-radius: 3px;*!*/
+    /*!*transition: .3s background ease;*!*/
+    /*!*cursor: pointer;*!*/
+/*!*}*!*/
 
-h1 {
-    font-size: 70px;
-    margin-bottom: 20px;
-    margin-top: 0;
-}
+/*!*form > #LoginWithAmazon:hover {*!*/
+    /*!*background: #438ae8;*!*/
+/*!*}*!*/
+
+/*label {*/
+    /*display: block;*/
+    /*margin: 10px 0;*/
+/*}*/
+
+/*label > input {*/
+    /*padding: 10px 220px 10px 10px;*/
+    /*color: darkgreen;*/
+/*}*/
+
+/*h1 {*/
+    /*font-size: 70px;*/
+    /*margin-bottom: 20px;*/
+    /*margin-top: 0;*/
+/*}*/

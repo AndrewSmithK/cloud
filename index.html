@@ -10,6 +10,7 @@
 </head>
 <body>
     <div id="amazon-root"></div>
+
     <script type="text/javascript">
 
         window.onAmazonLoginReady = function() {
@@ -23,23 +24,37 @@
         })(document);
 
     </script>
-    <section class="loginForm">
-        <form>
-            <h1>Login Form</h1>
 
-            <label>
-                <input type="email" placeholder="Email" required>
-            </label>
-            <label>
-                <input type="password" placeholder="Password" required>
-            </label>
-            <a href id="LoginWithAmazon">
-                <img border="0" alt="Login with Amazon"
-                     src="https://images-na.ssl-images-amazon.com/images/G/01/lwa/btnLWA_gold_156x32.png"
-                     width="156" height="32" />
-            </a>
-        </form>
+    <section class="loginForm">
+        <div class="containerForm">
+            <form>
+                <div class="imgcontainer">
+                    <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <a href id="LoginWithAmazon">
+                        <img border="0" alt="Login with Amazon"
+                             src="https://images-na.ssl-images-amazon.com/images/G/01/lwa/btnLWA_gold_156x32.png"
+                             width="156" height="32" />
+                    </a>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+
+            </form>
+        </div>
     </section>
+
     <script type="text/javascript">
         document.getElementById('LoginWithAmazon').onclick = function() {
             options = { scope : 'profile' };
@@ -48,5 +63,6 @@
             return false;
         };
     </script>
+
 </body>
 </html>
