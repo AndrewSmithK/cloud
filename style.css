@@ -46,7 +46,7 @@ button:hover {
 }
 
 #LoginWithAmazon {
-    width: 100%;
+    margin-top: 10px;
 }
 
 /* Extra style for the cancel button (red) */
@@ -76,7 +76,11 @@ img.avatar {
 /* The "Forgot password" text */
 span.psw {
     float: right;
-    padding-top: 16px;
+    padding-top: 8px;
+}
+
+span.psw > a{
+    text-decoration: none;
 }
 
 /* Change styles for span and cancel button on extra small screens */
