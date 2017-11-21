@@ -45,7 +45,7 @@ button:hover {
     opacity: 0.8;
 }
 
-#LoginWithAmazon {
+.loginForm {
     margin-top: 10px;
 }
 
